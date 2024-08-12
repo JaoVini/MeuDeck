@@ -124,3 +124,33 @@
     animation: toActive 0.9s ease-in-out 1;
 }
 
+@media screen and (min-width: 1880px) {
+
+    .dragao{
+        width: 1200px;
+        position: relative;
+        transform: translate(-50%, -10%);
+    }
+
+    .dragao.blue{
+        width: 630px;
+        transform: translate(-50%, 5%);
+    }
+    
+    .mago{
+        width: 500px;
+        transform: translate(-50%, -10%);
+    
+    }
+    
+    .magica{
+        width: 250px;
+        left: 350px;
+    }
+    
+    .armadilha{
+        width: 250px;
+        margin-left: 550px;
+    }
+}
+
