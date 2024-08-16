@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Domine:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root{
-    --background-color-header:#F4EDED;
+    --background-color-header: linear-gradient(to left, #999, #ccc, #1010);
     --color-links: #704E2E;
 }
 
@@ -21,14 +23,14 @@
 }
 
 .cabeçalho {
-    z-index: 10;
+    padding: 10px;
+    z-index: 5;
     display: flex;
-    background-color: var(--background-color-header);
+    background: var(--background-color-header);
     justify-content: space-between;
     align-items: center;
     position: relative;
-    position: sticky;
-    top: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -47,7 +49,7 @@
 .lista-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 80%;
     width: 60vw;
 }
 
@@ -58,13 +60,12 @@
 .lista-menu__titulo,
 .lista-menu__item {
     transition: 0.1s;
-    padding: 1em;
+    padding: 0.8em;
     background-color: #F4EDED;
     border: 1px solid #704E2E;
 }
 
 .lista-menu__titulo {
-    color: #fff;
     font-weight: 700;
 }
 
@@ -92,6 +93,10 @@
 
 .container__texto {
     display: none;
+}
+
+.opções__item{
+    color: (255, 213, 0, 0.86);
 }
 
 @media screen and (min-width: 1024px) {
